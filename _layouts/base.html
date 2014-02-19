@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} &mdash; {{ site.blog.title }}{% else %}{{ site.blog.title }} &mdash; {{ site.blog.subtitle }}{% endif %}</title>
+    {% if site.blog.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.blog.google_font }}" rel="stylesheet" type="text/css">{% endif %}
+    {% stylesheet main %}
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/{{ site.blog.logo }}"/>
+    <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.blog.title }}" />
+    <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.blog.title }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.blog.gplus }}">{% endif %}
+    {% if page.author.gplus %}<link rel="author" href="https://plus.google.com/{{ page.author.gplus }}">{% endif %}
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.blog.title }}{% endif %}"/>
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    {% if page.cover_image %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ page.cover_image }}"/>
+    {% if page.main_image %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ page.main_image }}"/>
+    {% endif %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ site.blog.logo }}"/>
+    {% endif %}
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt }}"/>
+    <meta name="description" content="{{ page.excerpt }}"/>
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.blog.title }}">
+</head>
+<body>
+
+<section class="site-nav container">
+        <nav id="navigation">
+            <a class="brand" href="/">
+                <img src="/images/chrisblanch_logo.png">
+            </a>
+            {% if site.tagline %}<span class="tagline">{{ site.tagline }}</span>{% endif %}
+        </nav>
+        <nav class="nav-right">
+            <a href="/">Home</a>
+            {% if site.about_link %}<a href="{{ site.about_link }}">About</a>{% endif %}
+            {% if site.projects_link %}<a href="{{ site.projects_link }}">Projects</a>{% endif %}
+            {% if site.product_link %}<a href="{{ site.product_link }}" class="btn btn-outline">Learn More</a>{% endif %}
+        </nav>
+</section>
+
+{{ content }}
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; {{ site.time | date: "%Y" }}
+
+        <nav>
+            <a href="{{ site.blog.url }}">{{ site.blog.company }}</a> &middot;
+            <a href="/">Blog</a> &middot;
+            {% if site.blog.product_link %}<a href="{{ site.blog.product_link }}">Product</a> &middot; {% endif %}
+            {% if site.blog.about_link %}<a href="{{ site.blog.about_link }}">About</a>{% endif %}
+        </nav>
+
+        <nav class="social">
+            {% if site.blog.twitter %}
+            <a href="https://twitter.com/{{ site.blog.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            {% endif %}
+            {% if site.blog.facebook %}
+            <a href="http://facebook.com/{{ site.blog.facebook }}" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            {% endif %}
+            <a href="/feed.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+        <p class="credits">blog powered by <a href="http://jekyllrb.com/">Jekyll</a>, hosted on <a href="http://pages.github.com/">Github</a>, using <a href="http://incorporated.sendtoinc.com/">Incorporated</a> theme</p>
+    </div>
+</footer>
+
+{% include _scripts.html %}
+
+</body>
+</html>
