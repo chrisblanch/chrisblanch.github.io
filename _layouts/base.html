@@ -35,11 +35,9 @@
             <a class="brand" href="/">
                 <img src="/images/chrisblanch_logo.png">
             </a>
-            {% if site.tagline %}<span class="tagline">{{ site.tagline }}</span>{% endif %}
         </nav>
         <nav class="nav-right">
-            <a href="/">Home</a>
-            {% if site.about_link %}<a href="{{ site.about_link }}">About</a>{% endif %}
+            {% if site.about_link %}<a href="{{ site.about_link }}">About Me</a>{% endif %}
             {% if site.projects_link %}<a href="{{ site.projects_link }}">Projects</a>{% endif %}
             {% if site.product_link %}<a href="{{ site.product_link }}" class="btn btn-outline">Learn More</a>{% endif %}
         </nav>
@@ -49,16 +47,7 @@
 
 <footer class="site-footer">
     <div class="container">
-        &copy; {{ site.time | date: "%Y" }}
-
-        <nav>
-            <a href="{{ site.blog.url }}">{{ site.blog.company }}</a> &middot;
-            <a href="/">Blog</a> &middot;
-            {% if site.blog.product_link %}<a href="{{ site.blog.product_link }}">Product</a> &middot; {% endif %}
-            {% if site.blog.about_link %}<a href="{{ site.blog.about_link }}">About</a>{% endif %}
-        </nav>
-
-        <nav class="social">
+    <nav class="social">
             {% if site.blog.twitter %}
             <a href="https://twitter.com/{{ site.blog.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
             {% endif %}
@@ -69,7 +58,12 @@
                 <i class="icon icon-rss black"></i>
             </a>
         </nav>
-        <p class="credits">blog powered by <a href="http://jekyllrb.com/">Jekyll</a>, hosted on <a href="http://pages.github.com/">Github</a>, using <a href="http://incorporated.sendtoinc.com/">Incorporated</a> theme</p>
+
+        {% if site.tagline %}<span class="tagline">{{ site.tagline }}</span>{% endif %}
+        &copy; {{ site.time | date: "%Y" }}
+        <p class="credits">powered by <a href="http://jekyllrb.com/">Jekyll</a>, hosted on <a href="http://pages.github.com/">Github</a>, using <a href="http://incorporated.sendtoinc.com/">Incorporated</a> theme</p>
+
+
     </div>
 </footer>
 
