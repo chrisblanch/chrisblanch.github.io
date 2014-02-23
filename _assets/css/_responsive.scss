@@ -59,7 +59,7 @@
     }
 
     .blog-cover {
-        height:200px;
+        height:120px;
 
         img {
             height:200px;
@@ -67,7 +67,7 @@
         }
 
         section {
-            padding:60px 0 0;
+            padding:40px 0 0;
             text-align:center;
 
             a {
@@ -96,13 +96,14 @@
 
             .brand {
                 display:inline-block;
+                margin-left: 15px;
             }
         }
         .nav-right {
             padding-left:0;
-
+            padding-right: 15px;
             a {
-                margin-right:.5em;
+                margin-left:.5em;
             }
         }
     }
