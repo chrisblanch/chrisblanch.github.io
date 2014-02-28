@@ -3,13 +3,11 @@ layout: static
 title: Hi.
 cover_image: 'unsplash_valley.jpg'
 ---
-
-I'm Chris Blanchard. I'm a former runner, a self-taught programmer, and an aspiring conservationist.
-I'm from Pittsburgh. I went to Duke. I live and work in San Francisco.
+<img src="/images/face_pic.png" height="84" class="selfie" style="border-radius: 4px; float:left; margin: 0 1em 0 0;"/> I'm Chris Blanchard. I'm a former runner, a novice mountaineer, and an aspiring conservationist. I was born in Pittsburgh, went to Duke, and live in San Francisco.
+I'm a self-taught programmer turned Product Manager at [Zignal Labs](http://zignallabs.com/).
 <br><br>
-I joined [Zignal Labs](http://zignallabs.com/) in 2012 as a frontend engineer and now serve as a Product Manager. For fun, I'm big into trying too hard at things - biking, mountaineering, board games.
+I believe that [software is eating the world](http://online.wsj.com/news/articles/SB10001424053111903480904576512250915629460), and it's on us to decide how.
 <br><br>
-I believe in the transformative power of technology, I think the internet is in its early adolesence at best, and that software will continue eating the world. I also want to move to a remote cabin in the Canadian Rockies. It's confusing.
+I get a little too excited by topographic maps, board games, and bourbon, among other things.
 <br><br>
 Welcome to my personal slice of internet. If you made it this far, [say hello, weirdo.](mailto:c@chrisblanch.com)
-<br><br>

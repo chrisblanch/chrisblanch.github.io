@@ -136,6 +136,11 @@ article {
         font-weight:400;
         letter-spacing:1px;
 
+        &.cover {
+            float: right;
+            margin-top: .9em;
+        }
+
         time, address {
             display:inline;
             font-size:13px;

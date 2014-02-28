@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} &mdash; {{ site.blog.title }}{% else %}{{ site.blog.title }} &mdash; {{ site.blog.subtitle }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} - {{ site.blog.title }}{% else %}{{ site.blog.title }} - {{ site.blog.subtitle }}{% endif %}</title>
     {% if site.blog.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.blog.google_font }}" rel="stylesheet" type="text/css">{% endif %}
     {% stylesheet main %}
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -44,7 +44,7 @@
         </nav>
         <nav class="nav-right">
             {% if site.about_link %}<a href="{{ site.about_link }}">About Me</a>{% endif %}
-            {% if site.projects_link %}<a href="{{ site.projects_link }}">Projects</a>{% endif %}
+            {% if site.projects_link_noo %}<a href="{{ site.projects_link }}">Projects</a>{% endif %}
             {% if site.product_link %}<a href="{{ site.product_link }}" class="btn btn-outline">Learn More</a>{% endif %}
         </nav>
 </section>

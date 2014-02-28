@@ -27,7 +27,7 @@ layout: base
         <div>
             <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
             {% if post.excerpt and post.hidethis %}<p>{{ post.excerpt }}</p>{% endif %}
-            <div class="meta">
+            <div class="meta cover">
                 <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
             </div>
         </div>
