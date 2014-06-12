@@ -87,6 +87,12 @@
         display:none;
     }
 
+    article .meta.cover {
+        float: left;
+        clear: both;
+        margin: 0;
+    }
+
     .site-nav {
         #navigation {
             padding-left:0;

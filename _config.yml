@@ -2,15 +2,16 @@ blog:
   # Blog Information
   title:        "chrisblanch"
   subtitle:     "The blog of Chris Blanchard"
-  cover_image:  'unsplash_black.jpg'
   logo:         logo.png
 
   # Company information
   company:      'Blanchard, Inc'
   url:          http://chrisblanch.com/
-  facebook:     ChristopherBlanchard
+  # facebook:     ChristopherBlanchard
   twitter:      chrisblanch
-  about_link:   https://chrisblanch.com/
+  instagram:    chrisblanch
+  github:       chrisblanch
+  about_link:   https://chrisblanch.com/about
 
   # Comments
   disqus:

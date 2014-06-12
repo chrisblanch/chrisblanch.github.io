@@ -4,6 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {{ site.blog.title }}{% else %}{{ site.blog.title }} - {{ site.blog.subtitle }}{% endif %}</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     {% if site.blog.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.blog.google_font }}" rel="stylesheet" type="text/css">{% endif %}
     {% stylesheet main %}
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -55,14 +56,22 @@
     <div class="container">
     <nav class="social">
             {% if site.blog.twitter %}
-            <a href="https://twitter.com/{{ site.blog.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            <a href="https://twitter.com/{{ site.blog.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon fa fa-twitter black"></i></a>
             {% endif %}
             {% if site.blog.facebook %}
-            <a href="http://facebook.com/{{ site.blog.facebook }}" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            <a href="http://facebook.com/{{ site.blog.facebook }}" title="Follow on Facebook" target="_blank"><i class="icon fa fa-facebook"></i></a>
             {% endif %}
+            {% if site.blog.instagram %}
+            <a href="http://instagram.com/{{ site.blog.instagram }}" title="Follow on Instagram" target="_blank"><i class="icon fa fa-instagram"></i></a>
+            {% endif %}
+            {% if site.blog.github %}
+            <a href="http://github.com/{{ site.blog.instagram }}" title="Follow on Github" target="_blank"><i class="icon fa fa-github-square"></i></a>
+            {% endif %}
+            {% if site.blog.rss %}
             <a href="/feed.xml" title="RSS Feed">
-                <i class="icon icon-rss black"></i>
+                <i class="icon fa fa-rss"></i>
             </a>
+            {% endif %}
         </nav>
 
         {% if site.tagline %}<span class="tagline">{{ site.tagline }}</span>{% endif %}
